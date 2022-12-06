@@ -1,2 +1,2 @@
 # gerador_senha
-Script em Python para automatizar a criação senhas seguras. Este é um projeto pessoal.
+Script Python que automatiza a criação de senhas aleatórias e seguras.
