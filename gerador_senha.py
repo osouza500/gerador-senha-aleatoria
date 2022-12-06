@@ -4,6 +4,7 @@ import string
 
 def continuar_sair():
     resposta = input("Criar nova senha? S/N.\n").lower()
+    print("")
     if resposta == "s":
         gerador_senha()
     elif resposta == "n":
@@ -19,9 +20,11 @@ def gerador_senha():
     digitos = string.digits
     caracteres_especiais = string.punctuation
     alfabeto = letras + digitos + caracteres_especiais
+    print("Bem-vind@ ao gerador de senha.\n")
     try:
         comprimento_senha = int(input("Comprimento da senha "
                                       "(mínimo: 8 caracteres):\n"))
+        print("")
     except ValueError:
         print("Input inválido. Tente novamente.\n")
         gerador_senha()
@@ -39,4 +42,5 @@ def gerador_senha():
         continuar_sair()
 
 
-gerador_senha()
+if __name__ == "__main__":
+    gerador_senha()
